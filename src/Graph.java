@@ -21,7 +21,7 @@ public class Graph extends JFrame {
     public final int HEIGHT = 600;
     public final int NODEDIAMETAR = 80;
     public JTextArea instructionsText = new JTextArea();
-    public JButton btnStart = new JButton("pokreni algoritam");
+    public JButton btnStart = new JButton("start simulation");
     ArrayList<Line> graphLines = new ArrayList<Line>();
     ArrayList<Node> graphNodes = new ArrayList<Node>();
     public Node source;
@@ -40,7 +40,7 @@ public class Graph extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setBackground(Color.white);
-        instructionsText.setText("izaberi izvor");
+        instructionsText.setText("choose source");
         instructionsText.setEditable(false);
         instructionsText.setVisible(false);
         btnStart.setVisible(false);
@@ -70,7 +70,7 @@ public class Graph extends JFrame {
                         }
                         repaint();
                         if (chooser==0){
-                            instructionsText.setText("izaberi odvod");
+                            instructionsText.setText("choose sink");
                             source = node;
                             chooser=1;
                         } else {
@@ -593,7 +593,7 @@ public class Graph extends JFrame {
             p = findPath(source, sink, path);
         }
         int flow = calculateFlow();
-        instructionsText.setText("algoritam završen, protok je "+Integer.toString(flow));
+        instructionsText.setText("Algorithm finished, maximal flow: "+Integer.toString(flow));
         btnStart.setVisible(false);
     }
 
