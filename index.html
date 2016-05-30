@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Ford-fulkerson-algorithm-simulator by adrianzgaljic</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Ford-fulkerson-algorithm-simulator</h1>
+        <h2></h2>
+
+        <section id="downloads">
+          <a href="https://github.com/adrianzgaljic/Ford-Fulkerson-Algorithm-Simulator/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/adrianzgaljic/Ford-Fulkerson-Algorithm-Simulator/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/adrianzgaljic/Ford-Fulkerson-Algorithm-Simulator" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="welcome-to-ford-fulkerson-algorithm-simulator" class="anchor" href="#welcome-to-ford-fulkerson-algorithm-simulator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Ford-Fulkerson algorithm simulator!</h1>
+
+<p>This is Java application which shows step by step how Ford-Fulkerson algorithm works.
+Ford-Fulkerson algorithm is used to compute maximal flow network.</p>
+
+<p><img src="https://github.com/adrianzgaljic/Ford-Fulkerson-Algorithm-Simulator/blob/master/images/simulation.png?raw=true" alt="Demo"></p>
+
+<h3>
+<a id="instructions" class="anchor" href="#instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instructions</h3>
+
+<p>To start algorithm select file-&gt;open and navigate to configuration 
+Configuration file describes flow network as folows:</p>
+
+<ul>
+<li>each line represents one link</li>
+<li>line is desciribed with 4 parameters separated with semicolon ";"</li>
+<li>first parameter is name of starting node</li>
+<li>second parameter is name of ending node</li>
+<li>third parameter is link capacity</li>
+<li>fourth parameter describes if link is directional-'u' or undirectional-'n'</li>
+</ul>
+
+<p>For example, simple network can be described as:</p>
+
+<pre><code>    1, 2, 3, u
+    1, 3, 3, u
+    2, 4, 2, u
+    2, 5, 3, u
+    3, 6, 2, u
+    6, 7, 3, u
+    3, 6, 4, u
+    3, 7, 2, u
+</code></pre>
+
+<p>Some other examples to try: <a href="https://github.com/adrianzgaljic/Ford-Fulkerson-Algorithm-Simulator/tree/master/examples">Examples</a></p>
+
+<p>When flow network is loaded, next step is to select source and sink nodes by clicking on them.
+To start simulation click "start algorithm" button. Button is than replaced with "next step" button which allows you to track changes in network after each step. When algorithm is finished, next step button will be disabled and result in form of maximal flow will be shown.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
