@@ -7,6 +7,7 @@ Ford-Fulkerson algorithm is used to compute maximal flow network.
 ###Instructions
 
 To start algorithm select file->open and navigate to configuration 
+
 Configuration file describes flow network as folows:
 * each line represents one link
 * line is desciribed with 4 parameters separated with semicolon ";"
